@@ -1,0 +1,99 @@
+.big-container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-container {
+  max-width: 1200px;
+  padding: 25px 40px 35px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+nav a {
+  max-height: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+nav img {
+  border-radius: 100%;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.grid {
+  grid-template-columns: 50% 50%;
+  gap: 15px;
+  justify-content: start;
+}
+
+.card {
+  max-width: 650px;
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  background-color: whitesmoke;
+  opacity: 0;
+}
+
+.card-image {
+  transition: all 0.1s ease-in;
+}
+
+.card-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-text {
+  background-color: rgb(24, 18, 43);
+  width: 100%;
+}
+
+.card-text p {
+  height: 100%;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.card:hover .card-image {
+  filter: brightness(0.75);
+}
+
+@media only screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: auto;
+    gap: 25px;
+  }
+  .small-container {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .card-image img {
+    object-position: center;
+  }
+
+  nav h1 {
+    font-size: 1.5rem;
+  }
+}

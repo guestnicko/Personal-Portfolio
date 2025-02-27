@@ -1,0 +1,57 @@
+body {
+  background: rgb(83, 92, 145);
+  background: linear-gradient(90deg, #535c91 12%, #070f2b 88%);
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: whitesmoke;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.small-container {
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.basis-50 {
+  flex-basis: 50%;
+}
+
+.div-hort-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.grid {
+  display: grid;
+}

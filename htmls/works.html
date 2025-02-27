@@ -4,52 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/stylesheets/style_2.css" />
+    <link rel="stylesheet" href="../stylesheets/general.css" />
+    <link rel="stylesheet" href="../stylesheets/work-design.css" />
+    <script type="module" src="../scripts/work.js"></script>
   </head>
-  <body class="inter-font-family">
-    <nav>
-      <div class="navbutton">
-        <button onclick="showNavigationMenu()">
-          <i class="fa-solid fa-bars">X</i>
-        </button>
-      </div>
-      <div class="navbar" id="navbar" style="max-height: 0px">
-        <ul>
-          <a href="/htmls/index.html"><li>Home</li></a>
-          <a href="/htmls/About-me.html"> <li>About Me</li></a>
-          <a href="#"><li>Works</li></a>
-        </ul>
-      </div>
-    </nav>
-    <main>
-      <div class="container"><h1>Project Showcase</h1></div>
-      <div class="project-list">
-        <div class="container">
-          <h3>Front End</h3>
-          <div class="small-container grid">
-            <div class="card"></div>
+  <body>
+    <div class="big-container flex">
+      <div class="small-container">
+        <nav class="">
+          <a href="home.html"> <img src="../images/arrow.jpg" /> Back</a>
+          <h1>Projects & Works</h1>
+        </nav>
+        <div class="grid">
+          <div
+            onclick="redirectUser('https://github.com/dondominick/ams')"
+            class="card"
+          >
+            <div class="card-image">
+              <img src="../images/projects/ams.png" alt="" />
+            </div>
+            <div class="card-text">
+              <p>ICSA Student Attendance Management System</p>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <h3>Back End</h3>
-          <div class="small-container grid">
-            <div class="card" onclick="toProject()">
-              <img
-                src="https://images.freeimages.com/images/large-previews/355/poppies-2-1334190.jpg?fmt=webp&h=350"
-                alt="image"
-                class="project-image"
-              />
+          <div
+            onclick="redirectUser('https://github.com/dondominick/career-connect')"
+            class="card"
+          >
+            <div class="card-image">
+              <img src="../images/projects/career-connect.png" alt="" />
+            </div>
+            <div class="card-text">
+              <p>Career Connect - Job Listing Website</p>
+            </div>
+          </div>
+          <div
+            onclick="redirectUser(`https://github.com/dondominick/Student-Grade-Management-System`)"
+            class="card"
+          >
+            <div class="card-image">
+              <img src="../images/projects/gsu-javaproject.png" alt="" />
+            </div>
+            <div class="card-text">
+              <p>ICSA Student Attendance Management System</p>
             </div>
           </div>
         </div>
-        <div class="container">
-          <h3>Other Projects</h3>
-          <div class="small-container grid">
-            <div class="card"></div>
-          </div>
-        </div>
       </div>
-    </main>
-    <script src="index.js"></script>
+    </div>
   </body>
 </html>

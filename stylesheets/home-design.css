@@ -1,0 +1,153 @@
+.big-container {
+  max-height: 100vh;
+  width: 100%;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+}
+.container {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+}
+#general-box {
+  max-height: 800px;
+  width: 100%;
+}
+.small-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 72px;
+  font-weight: 1000;
+  font-stretch: extra-expanded;
+  font-style: bold;
+}
+
+gap-1 {
+  gap: 20px;
+}
+
+.project-label {
+  font-size: 68px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: blue;
+  padding-left: 25px;
+  width: 100%;
+}
+
+.project-container {
+  max-height: 600px;
+  padding: auto;
+  gap: 35px;
+  justify-content: center;
+  padding-left: 25px;
+  padding: 5px;
+}
+.desc-container {
+  height: 100%;
+  padding: 8px;
+}
+
+.small-container:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+button {
+  all: unset;
+}
+.contact-button {
+  margin: 8px 8px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.contact-button img {
+  width: 60px;
+}
+i {
+  font-size: 60px;
+}
+
+#about-me {
+  position: relative;
+  left: -500px;
+  opacity: 0;
+}
+#skills {
+  position: relative;
+  left: -500px;
+  /* opacity: 0; */
+}
+
+#projects {
+  position: relative;
+  right: -500px;
+  opacity: 0;
+}
+#contact-me {
+  position: relative;
+  left: -500px;
+
+  /* opacity: 0; */
+}
+
+#general-box {
+  position: relative;
+}
+.words,
+.project-label {
+  opacity: 0;
+}
+
+.contact-button:hover {
+  scale: 1.1;
+  transition: all ease-in-out 250ms;
+}
+
+.clicked {
+  animation: clicked 0.45s ease-in alternate;
+}
+
+@keyframes clicked {
+  from {
+    scale: 1;
+    opacity: 0.8;
+  }
+  to {
+    scale: 0.98;
+    background-color: white;
+    opacity: 0.5;
+    text-shadow: 0 0 rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .desc-container h1 {
+    font-size: 3rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  .project-label {
+    text-align: center;
+    padding: 0;
+    font-size: 3rem;
+  }
+  .project-container {
+    padding: 0;
+    overflow-x: scroll;
+  }
+}
