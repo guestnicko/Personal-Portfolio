@@ -1,5 +1,3 @@
-console.log("home.js is working");
-
 const aboutme = document.querySelector("#about-me");
 const skills = document.querySelector("#skills");
 const projects = document.querySelector("#projects");

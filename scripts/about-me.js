@@ -1,5 +1,3 @@
-console.log("about-me.js is working");
-
 window.redirectUser = redirectUser;
 function redirectUser(url) {
   const button = document.querySelector("#button-works");

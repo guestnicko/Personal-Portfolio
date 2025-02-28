@@ -1,5 +1,3 @@
-console.log("index.js is working");
-
 const profile = document.querySelector(".profile");
 
 profile.addEventListener("click", (e) => {

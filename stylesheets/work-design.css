@@ -54,6 +54,7 @@ nav img {
 
 .card-image {
   transition: all 0.1s ease-in;
+  background-color: transparent;
 }
 
 .card-image img {
