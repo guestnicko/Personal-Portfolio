@@ -6,6 +6,6 @@ profile.addEventListener("click", (e) => {
   profile.classList.toggle("clicked");
 
   setTimeout(() => {
-    window.location.href = "/htmls/home.html";
+    window.location.href = "htmls/home.html";
   }, 100);
 });
