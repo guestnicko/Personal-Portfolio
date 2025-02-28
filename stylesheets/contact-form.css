@@ -1,5 +1,5 @@
 .big-container {
-  min-height: 80dvh;
+  min-height: 90dvh;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -10,8 +10,7 @@
   margin-top: 40px;
   max-width: 1200px;
   padding: 30px 30px 30px;
-  min-height: 550px;
-  max-height: 650px;
+  min-height: 600px;
 }
 
 nav {
@@ -68,6 +67,7 @@ textarea {
   border-bottom: 2px solid rgb(99, 89, 133);
   padding: 5px;
   margin: 8px 3px;
+  background-color: transparent;
 }
 
 textarea {
@@ -99,6 +99,15 @@ h2 {
 .contact-group i {
   font-size: 32px;
   margin-right: 10px;
+}
+
+#submit-btn {
+  text-align: center;
+  background-color: #535c91;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 5px;
+  font-weight: 500;
 }
 
 .clicked {
