@@ -49,7 +49,7 @@ nav img {
   height: 100%;
   max-height: 400px;
   background-color: whitesmoke;
-  opacity: 0;
+  animation: animateOnLoad 1s ease-in;
 }
 
 .card-image {
@@ -79,6 +79,15 @@ nav img {
   filter: brightness(0.75);
 }
 
+@keyframes animateOnLoad {
+  from {
+    opacity: 0;
+    filter: brightness(1.5);
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media only screen and (max-width: 800px) {
   .grid {
     grid-template-columns: auto;

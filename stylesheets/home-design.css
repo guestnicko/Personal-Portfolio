@@ -6,6 +6,7 @@
   align-items: center;
   display: flex;
   padding: 5px;
+  overflow-x: hidden;
 }
 .container {
   align-items: center;
@@ -33,7 +34,7 @@ h1 {
   font-style: bold;
 }
 
-gap-1 {
+.gap-1 {
   gap: 20px;
 }
 
@@ -53,6 +54,7 @@ gap-1 {
   justify-content: center;
   padding-left: 25px;
   padding: 5px;
+  animation: projectsAnimateOnLoad 1s ease;
 }
 .desc-container {
   height: 100%;
@@ -80,37 +82,18 @@ i {
   font-size: 60px;
 }
 
-#about-me {
-  position: relative;
-  left: -500px;
-  opacity: 0;
+.desc-container {
+  animation: descAnimateOnLoad ease;
 }
-#skills {
-  position: relative;
-  left: -500px;
-  /* opacity: 0; */
+.desc-container:nth-child(1) {
+  animation-duration: 0.8s;
 }
-
-#projects {
-  position: relative;
-  right: -500px;
-  opacity: 0;
+.desc-container:nth-child(2) {
+  animation-duration: 1.1s;
 }
-#contact-me {
-  position: relative;
-  left: -500px;
-
-  /* opacity: 0; */
+.desc-container:nth-child(3) {
+  animation-duration: 1.3s;
 }
-
-#general-box {
-  position: relative;
-}
-.words,
-.project-label {
-  opacity: 0;
-}
-
 .contact-button:hover {
   scale: 1.1;
   transition: all ease-in-out 250ms;
@@ -130,6 +113,28 @@ i {
     background-color: white;
     opacity: 0.5;
     text-shadow: 0 0 rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes descAnimateOnLoad {
+  from {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes projectsAnimateOnLoad {
+  from {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
